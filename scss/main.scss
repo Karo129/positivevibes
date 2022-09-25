@@ -1,0 +1,324 @@
+@use './colors' as c;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Dancing-Script', sans-serif;
+	font-size: 1.6rem;
+	color: c.$white;
+	background-color: c.$white;
+}
+
+// nawigacja
+a.navbar-brand {
+	font-size: 1.5em;
+	font-weight: bold;
+	i {
+		color: c.$gold;
+	}
+}
+
+navbar-toggler {
+	font-size: 3em;
+	padding: 1em 2em;
+}
+
+a.nav-link,
+a.nav-link.active {
+	color: c.$white;
+	padding: 1em 2em;
+}
+a.nav-link.active {
+	background-color: c.$gold;
+}
+a.nav-link:hover {
+	background-color: c.$gold;
+}
+
+.nav-item {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.dropdown-menu {
+	font-size: 1.1em;
+	color: c.$white;
+}
+
+.dropdown-item {
+	color: c.$white;
+	&:hover {
+		background-color: c.$gold;
+	}
+}
+
+// header
+.header {
+	&__hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../../img/globe640.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+
+		&__shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -1;
+		}
+		&__text {
+			font-size: 1.8em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+			z-index: 1;
+			h1 {
+				font-size: 2em;
+			}
+		}
+	}
+	&__btn {
+		font-size: 0.6em;
+		text-transform: uppercase;
+		padding: 1em 2em;
+		border: 0.2em solid c.$gold;
+	}
+	h1 {
+		text-transform: uppercase;
+	}
+}
+
+// BENEFITS
+
+.benefits__position {
+	font-size: 1.7em;
+	h3 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+	i {
+		font-size: 1.3em;
+		padding: 0.6em;
+	}
+	&-hover:hover {
+		color: c.$gold;
+	}
+}
+
+// CHOICE
+.selectlanguage {
+	background-color: c.$gold;
+
+	&__header {
+		font-size: 2em;
+		font-weight: bold;
+		padding: 2em;
+		color: c.$dark;
+	}
+	&__flag {
+		transition: scale 0.3s;
+	}
+	&__flag:hover {
+		transform: scale(1.15);
+	}
+	&__flag a {
+		font-size: 1.3em;
+		font-weight: bold;
+		color: c.$dark;
+		text-decoration: none;
+	}
+}
+
+// .underline {
+// 	color: #db8928;
+// }
+
+.history__header {
+	color: c.$gold;
+}
+
+// CHALLANGEYOU
+.test {
+	height: 38rem;
+
+	&__display1 {
+		font-size: 2.8em;
+	}
+	&__btn {
+		font-size: 1.6em;
+		padding: 0.5em 2em;
+		border: 0.2em solid c.$gold;
+	}
+}
+
+// KONTAKT
+.contact {
+	font-size: 1.1em;
+	h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	i {
+		color: c.$gold;
+	}
+}
+
+.footer {
+	font-weight: bold;
+}
+// KONTAKT kontakt
+/* kontakt */
+.pagecontact {
+	background-color: c.$white;
+	h3 {
+		font-size: 1.1em;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__input-group__btn {
+		font-size: 1.1em;
+		padding: 0.5em 1em;
+		border: 0.2em solid c.$gold;
+	}
+}
+.map {
+	background-color: c.$gold;
+	iframe {
+		width: 100%;
+		min-height: 30em;
+	}
+}
+
+// TEACHERS header2
+.header2 {
+	&__hero-img {
+		position: relative;
+		height: 30vh;
+		background-image: url('../../img/mapoftheworld.jpg');
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+
+		&__shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -1;
+		}
+		&__text {
+			font-size: 1.7em;
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+			z-index: 1;
+			h1 {
+				font-size: 2em;
+			}
+		}
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+}
+// TEACHERS
+
+.teachers {
+	background-color: c.$white;
+	color: c.$dark;
+	&__info {
+		&__card {
+			&__text h3 {
+				font-size: 1em;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+// ENGLISH
+
+.englishcourse__info h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.7em;
+	p {
+		font-size: 1.2em;
+		padding: 0.1em;
+	}
+}
+.englishcourse__star {
+	font-size: 1.7em;
+
+	i {
+		font-size: 3em;
+		color: c.$gold;
+	}
+}
+
+// TEST
+.header3 {
+	&__hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../../img/board.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+
+		&__shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -1;
+		}
+		&__text {
+			font-size: 1.7em;
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100%;
+			z-index: 1;
+			h1 {
+				font-size: 2em;
+			}
+		}
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	.header__hero-img {
+		background-image: url('../../img/globe1920.jpg');
+	}
+}
