@@ -66,7 +66,7 @@ a.nav-link:hover {
 	&__hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('../../img/globe640.jpg');
+		background-image: url('../img/globe640.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -209,7 +209,7 @@ a.nav-link:hover {
 	&__hero-img {
 		position: relative;
 		height: 30vh;
-		background-image: url('../../img/mapoftheworld.jpg');
+		background-image: url('../img/mapoftheworld.jpg');
 		background-position: bottom;
 		background-size: cover;
 		background-attachment: fixed;
@@ -282,7 +282,7 @@ a.nav-link:hover {
 	&__hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url('../../img/board.jpg');
+		background-image: url('../img/board.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -319,6 +319,6 @@ a.nav-link:hover {
 
 @media (min-width: 1200px) {
 	.header__hero-img {
-		background-image: url('../../img/globe1920.jpg');
+		background-image: url('../img/globe1920.jpg');
 	}
 }
